@@ -1,0 +1,734 @@
+/* Header ----------------------------------------------------------------------------- */
+/* Social Navigation */
+#social-nav #navbarSocial{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#social-nav.bg-light {
+    background-color:rgb(42, 50, 53) !important;
+}
+
+#social-nav #navbarSocial li{
+    text-align: center;
+}
+
+#social-nav li.nav-item{
+    align-items: center;
+}
+
+/* Menu Navigation */ 
+#menu-nav.bg-light {
+    background-color: white !important ;
+}
+
+#menu-nav a.nav-link{
+    font-size: 0.9em !important;
+    color: #46586E;
+}
+
+
+/* Page Accueil ------------------------------------------------------------------------ */
+/* Intro */
+.container #intro { 
+    height: 400px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.container #intro {
+    background-image: linear-gradient(to bottom,rgba(130, 155, 115, 1) 20%, rgba(155, 165, 153, 0.6) 86%, rgba(51,51,51,0.8) 100%),  url("../img/jpg/ian-dooley-280928-unsplash.jpg");
+    background-size: cover;
+}
+
+.container #intro h1 { 
+    font-size: 2.5em;
+}
+
+.container #intro p { 
+    font-size: 2em;
+}
+
+#introbutton {
+    display: flex;
+    justify-content: center;
+}
+
+#assobutton {
+    display: flex;
+    justify-content: center;
+}
+
+button.btn.btn-dark{
+    background-color:rgb(120, 152, 190) !important;
+    border-color: rgb(120, 152, 190)  !important;
+    color:white;
+}
+
+/* Caracteristiques */
+
+.container.car {
+    margin-top: 4em;
+}
+
+.col#car {
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.col#car img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1.2em;
+}
+
+.itemscar{
+    text-align: center;
+    color: #46586E;
+}
+
+/* Projets */
+
+.container.projets {
+    height: 100%;
+    background-color: rgb(42, 50, 53);
+    color: white;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em
+}
+
+.container.projets h1 {
+    font-size: 2.5em;
+    padding-bottom: 0.5em;
+}
+
+.container.projets p{
+    padding-bottom: 1.5em;
+}
+
+.col.passés {
+    background-image: linear-gradient(to bottom,	rgba(130, 155, 115, .6) 100%, rgba(51,51,51,0.8) 100%), url("../img/jpg/B9711380669Z.1_20170312192830_000+G868M7E21.2-0.jpg");
+    background-size: cover;
+    height: 252px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn.passés{
+    margin-top: 10em;  
+}
+
+.col.futurs {
+    background-image: linear-gradient(to bottom,	rgba(130, 155, 115, .6) 100%, rgba(51,51,51,0.8) 100%), url("../img/jpg/vishnu-prajapati-722050-unsplash.jpg");
+    background-size: cover;
+    height: 252px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn.futurs{
+    margin-top: 10em;
+}
+
+/* Partenariats */
+
+.container.partenaires { 
+    background-image: url("");
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+
+/* Media Presse */
+
+
+/* Agenda --------------------------------------------------------------------------------- */
+/* Liste de destination */
+
+
+
+.itemsagenda{
+    text-align: left;
+}
+
+.itemsagenda li{
+    background-color: rgba(70, 88, 110, 0.3);
+    padding-left: 1em;
+    padding-right: 1em;
+    
+}
+
+li.nav-link {
+    border: #46586E;
+}
+
+@media (max-width: 767.98px){
+    
+    .container#inversion {
+        display: flex;
+        flex-wrap: row-reverse;
+    }
+}
+
+
+/* Qui sommes nous ?  --------------------------------------------------------------------------- */
+/* Liste de destination */
+
+.carousel{
+	padding: 0 30px;
+}
+.carousel__container {
+	overflow: hidden;
+    height: 200px;
+}
+.carousel__list{
+	position: relative;
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.carousel__list.unwrap{
+	flex-wrap: nowrap;
+}
+
+.carousel__item{
+	flex: 1 0 250px;
+    width: 300px;
+    max-width: 300px;
+	height: 200px;
+	background-color: #ccc;
+	text-align: center;
+	line-height: 100px;
+}
+
+.control-button {
+    display: inline-block;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: darkgray;
+}
+
+@media (min-width: 1024px) {
+    .control-button {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* .carousel__item:not(:first-of-type) { */
+        .carousel__item {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .carousel__item:nth-of-type(1) {
+            opacity: 1;
+            visibility: visible;
+            z-index: -10;
+        }
+        .control-button-active {
+            color: black;
+        }
+        .carousel__item:nth-of-type(1):target {
+            opacity: 1;
+            visibility: visible;
+        }  
+        .carousel__item:nth-of-type(2):target {
+            opacity: 1;
+            visibility: visible;
+            transform: translatex(-250px);
+        }
+        .carousel__item:nth-of-type(3):target {
+            opacity: 1;
+            visibility: visible;
+            transform: translatex(-500px);
+        }
+    }
+    
+    
+    
+    /* Page Projets All --------------------------------------------------------------------------------- */
+    /* Bannière */
+    
+    
+    .container #introfuturs { 
+        height: 400px;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+    
+    .container #introfuturs {
+        background-image: linear-gradient(to bottom,rgb(115, 131, 155) 20%, rgba(155, 165, 153, 0.6) 86%, rgba(51,51,51,0.8) 100%),  url("../img/jpg/vishnu-prajapati-722050-unsplash.jpg");
+        background-size: cover;
+    }
+    
+    .container #introfuturs h1 { 
+        font-size: 2.5em;
+    }
+    
+    .container #introfuturs p { 
+        font-size: 2em;
+    }
+    
+    .container #titreGrid{
+        padding-top: 3em;
+        padding-bottom: 2em;
+    }
+    
+    
+    /* Grille Projet */
+    
+    .container #grid {
+        display: flex;
+        justify-items: center;
+    }
+    
+    .col-sm-5.col-lg-4.col-md-6{
+        height: 200px;
+    }
+    
+    a#louvre.col-sm-5.col-lg-4.col-md-6{
+        align-items: center;
+    }
+    
+    #louvre img{
+        width: 100%;
+        height: 170px;
+    }
+    
+    #arkeos img{
+        width: 100%;
+        height: 170px;
+    }  
+    
+    #telethon img{
+        width: 100%;
+        height: 170px;
+    }  
+    
+    #canada img{
+        width: 100%;
+        height: 170px;
+    }  
+    
+    #paix img{
+        width: 100%;
+        height: 170px;
+    }  
+    
+    .text h2{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+    
+    .row {
+        margin-top: 12px;
+    }
+    
+    .col-lg-4 {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    figure {
+        overflow: hidden;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    .col-lg-4 img {
+        display: block;
+        width: 100%;
+        height: 300px;
+    }
+    
+    /* Louvre */
+    
+    .col-lg-4#louvre {
+        position: relative;
+    }
+    
+    .col-lg-4#louvre .text {
+        position: absolute;		
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        opacity: 0;
+        transition: all 0.8s ease;	
+    }
+    
+    .col-lg-4#louvre .text h2 {		
+        margin: 0;		
+        color: white;
+    }
+    
+    .col-lg-4#louvre:hover .text {
+        opacity: 1;
+    }
+    
+    .col-lg-4#louvre:hover img {
+        -webkit-filter: grayscale(95%);
+    }
+    
+    
+    /* Arkeos */
+    
+    .col-lg-4#arkeos {
+        position: relative;
+    }
+    
+    .col-lg-4#arkeos .text {
+        position: absolute;		
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        opacity: 0;
+        transition: all 0.8s ease;	
+    }
+    
+    .col-lg-4#arkeos .text h2 {		
+        margin: 0;		
+        color: white;
+    }
+    
+    .col-lg-4#arkeos:hover .text {
+        opacity: 1;
+    }
+    
+    .col-lg-4#arkeos:hover img {
+        -webkit-filter: grayscale(95%);
+    }
+    
+    /* Telethon */
+    
+    .col-lg-4#telethon {
+        position: relative;
+    }
+    
+    .col-lg-4#telethon .text {
+        position: absolute;		
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        opacity: 0;
+        transition: all 0.8s ease;	
+    }
+    
+    .col-lg-4#telethon .text h2 {		
+        margin: 0;		
+        color: white;
+    }
+    
+    .col-lg-4#telethon:hover .text {
+        opacity: 1;
+    }
+    
+    .col-lg-4#telethon:hover img {
+        -webkit-filter: grayscale(95%);
+    }
+    
+    /* Canada */
+    
+    .col-lg-4#canada {
+        position: relative;
+    }
+    
+    .col-lg-4#canada .text {
+        position: absolute;		
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        opacity: 0;
+        transition: all 0.8s ease;	
+    }
+    
+    .col-lg-4#canada .text h2 {		
+        margin: 0;		
+        color: white;
+    }
+    
+    .col-lg-4#canada:hover .text {
+        opacity: 1;
+    }
+    
+    .col-lg-4#canada:hover img {
+        -webkit-filter: grayscale(95%);
+    }
+    
+    /* Paix */
+    
+    .col-lg-4#paix {
+        position: relative;
+    }
+    
+    .col-lg-4#paix .text {
+        position: absolute;		
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        opacity: 0;
+        transition: all 0.8s ease;	
+    }
+    
+    .col-lg-4#paix .text h2 {		
+        margin: 0;		
+        color: white;
+    }
+    
+    .col-lg-4#paix:hover .text {
+        opacity: 1;
+    }
+    
+    .col-lg-4#paix:hover img {
+        -webkit-filter: grayscale(95%);
+    }
+    
+    @media (max-width: 991.98px) {
+        .col-sm-5.col-md-6#louvre .text {
+            opacity: 1;
+        }
+        
+        .col-sm-5.col-md-6#louvre img {
+            -webkit-filter: grayscale(95%);
+        }
+        
+        .col-sm-5.col-md-6#arkeos .text {
+            opacity: 1;
+        }
+        
+        .col-sm-5.col-md-6#arkeos img {
+            -webkit-filter: grayscale(95%);
+        }
+        
+        .col-sm-5.col-md-6#telethon .text {
+            opacity: 1;
+        }
+        
+        .col-sm-5.col-md-6#telethon img {
+            -webkit-filter: grayscale(95%);
+        }
+        
+        .col-sm-5.col-md-6#canada .text {
+            opacity: 1;
+        }
+        
+        .col-sm-5.col-md-6#canada img {
+            -webkit-filter: grayscale(95%);
+        }
+        
+        .col-sm-5.col-md-6#paix .text {
+            opacity: 1;
+        }
+        
+        .col-sm-5.col-md-6#paix img {
+            -webkit-filter: grayscale(95%);
+        }
+    }
+    
+    /* Page Projets passés détails ---------------------------------------------------------------------- */
+    /* Bannière */
+    
+    .container #introlens { 
+        height: 400px;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+    
+    .container #introlens {
+        background-image: linear-gradient(to bottom,rgba(130, 155, 115, 1) 20%, rgba(155, 165, 153, 0.6) 86%, rgba(51,51,51,0.8) 100%),  url("../img/jpg/la_galerie_du_temps.jpg");
+        background-size: cover;
+    }
+    
+    .container #introlens h1 { 
+        font-size: 2.5em;
+    }
+    
+    .container #introlens p { 
+        font-size: 2em;
+    }
+    
+    /* Description */
+    
+    .container#description{
+        display: flex;
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+    }
+    
+    /* Grille */
+    .container {
+        background: #f9f9f9;
+    }
+    
+    .flex-column {
+        max-width: 260px;
+    }
+    
+    img {
+        margin: 5px;
+    }
+    
+    .scale {
+        transform: scaleY(1.05);
+        padding-top: 5px; 
+    }
+    
+    
+    /* Page Projets futurs ------------------------------------------------------------------------------ */
+    /* Articles */
+    
+    .container #margefuturs {
+        height:70px;
+    }
+    
+    .container #titrefuturs{
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
+    
+    [data-toggle="collapse"] .fa:before {  
+        content: "\-";
+    }
+    
+    [data-toggle="collapse"].collapsed .fa:before {
+        content: "\+";
+    }
+    
+    .card-body #content {
+        display: flex;
+    }
+    
+    #image{
+        background-image: url("../img/jpg/mariana-medvedeva-379652-unsplash.jpg");
+        background-size:cover;
+    }
+    
+    /* Page Partenariats -------------------------------------------------------------------------------- */
+    /* Titre et carrousel logo */
+    
+    .container.partintro h1{
+        padding-top: 2em;
+    }
+    
+    .container.partlogo{
+        margin-bottom: 2em;
+    }
+    
+    img.logo{
+        height: 100%;
+        width: 120px;
+    }
+    
+    #raison{
+        background-color: rgb(166, 193, 226);
+        height: 400px;
+    }
+    
+    #visibilité{
+        background-color: rgb(120, 152, 190);
+        height: 400px;
+    }
+    
+    
+    #sponsoring{
+        background-color: rgb(166, 193, 226);
+        height: 400px;
+    }
+    
+    /* Raisons */
+    
+    
+    
+    
+    /* Besoins, sponsoring et mécénat */
+    
+    
+    
+    /* Page Presse --------------------------------------------------------------------------------------- */
+    /* Bannière */
+    
+    .container #presse { 
+        height: 250px;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+    
+    .container #presse {
+        background-color: #46586E;
+    }
+    
+    .container #media h2{
+        text-align: left;
+    }
+    
+    .container #media h5{
+        text-align: left;
+    }
+    
+    /* Articles et video */
+    
+    .container #media {
+        display: flex;
+        padding-top: 3em;
+    }
+    
+    .container #media h2{
+        padding-bottom: 1em;
+    }
+    
+    .container #media h5{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    
+    .article {
+        display: flex;
+        margin-bottom: 2em;
+    }
+    
+    .article img{
+        width: 100%;
+    }
+    
+    /* Responsive Media queries -------------------------------------------------------------------------- */
+    
+    @media (max-width: 575.98px) {
+        main{
+            margin-top: 25px;
+        }
+    }
+    
+    @media (max-width: 767.98px) {
+        main{
+            padding-top: 100px;
+        }
+    }
+    
+    @media (max-width: 991.98px) {
+        main{
+            padding-top: 100px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        main{
+            padding-top: 100px;
+        }
+    }
+    
+    
