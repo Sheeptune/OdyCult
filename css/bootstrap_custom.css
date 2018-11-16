@@ -715,6 +715,17 @@ li.nav-link {
         }
     }
 
+    /* Footer--------------------------------------------------------------------------------------------- */
+  
+    .container.footer {
+        background-color:rgb(42, 50, 53) !important;
+        display: flex;
+        color: beige;
+        margin-top: 3em;
+        padding-top: 1em;
+    }
+
+
     /* Responsive Media queries -------------------------------------------------------------------------- */
     
     @media (max-width: 575.98px) {
